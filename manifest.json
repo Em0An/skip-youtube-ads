@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Skip youtube Ads",
+  "version": "0.1",
+  "description": "Skip youtube Ads By Em An web developer - email: study.eman@gmail.com - linkedin: https://www.linkedin.com/in/em-an/",
+  "content_scripts": [{
+    "matches": [
+      "https://www.youtube.com/*",
+      "https://m.youtube.com/*",
+      "https://www.youtube.com/watch?*",
+      "https://m.youtube.com/watch?*"
+    ],
+    "js": ["content.js"]
+  }],
+  "background": {"scripts": ["background.js"]},
+  "browser_action": {
+    "default_title": "Skip youtube Ads",
+    "default_icon": "icon.png"
+  },
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  }
+}
